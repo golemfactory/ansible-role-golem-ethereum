@@ -1,0 +1,16 @@
+---
+# tasks file for golem-ethereum
+
+- name: add ethereum ppa
+  apt_repository:
+    repo: "ppa:ethereum/ethereum"
+    state: present
+  become: yes
+
+- name: install geth
+  apt:
+    name: geth
+    state: latest
+    update_cache: yes
+  become: yes
+  notify: geth updated

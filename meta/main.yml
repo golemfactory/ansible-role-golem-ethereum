@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Karol Tomala
+  description: Golem Ethereum Dependency
+  company: Golem Factory GmbH
+  license: BSD
+  min_ansible_version: 2.4
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - 16.04
+
+  galaxy_tags:
+    - golem
+    - golem-ethereum
+    - golem_ethereum
+    - ethereum
+    - geth
