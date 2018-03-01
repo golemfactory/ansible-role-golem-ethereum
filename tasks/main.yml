@@ -10,7 +10,8 @@
 - name: install geth
   apt:
     name: geth
-    state: latest
+    # Golem 0.11.0 is not compatible with Geth 1.8.x
+    # state: latest
     update_cache: yes
   become: yes
   notify: geth updated
